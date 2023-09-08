@@ -4,6 +4,7 @@
 :root {
   --primary: #12bdff;
   --dark-primary: #1b1f24;
+  --nunito: 'Nunito Sans', sans-serif;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--nunito);
 }
 
 /* header */
