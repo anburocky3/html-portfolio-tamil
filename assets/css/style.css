@@ -3,6 +3,7 @@
 /* Global variables */
 :root {
   --primary: #12bdff;
+  --primary-hover: #0c8ec2;
   --dark-primary: #1b1f24;
   --nunito: 'Nunito Sans', sans-serif;
 }
@@ -35,35 +36,113 @@ header .logo {
   letter-spacing: 2px;
 }
 
-ul {
+header ul {
   list-style: none;
   display: flex;
 }
 
-ul li {
+header ul li {
   margin-right: 20px;
 }
 
-ul li a {
+header ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 600;
 }
 
-ul li a:hover {
+header ul li a:hover {
   color: var(--primary);
 }
 
-/* header > buttons */
-header button {
+/* Section: Hero Homepage */
+section.hero-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  padding: 20px 120px 0 240px;
+}
+
+.hero-section__title {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-section__title > span {
+  color: var(--primary);
+}
+
+.hero-section__desc {
+  color: #c4c4c4;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons li {
+  margin-right: 15px;
+}
+
+ul.social-icons {
+  list-style: none;
+  display: flex;
+}
+
+.social-icons li > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons li a > i.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.social-icons li a > i.fa-linkedin:hover {
+  color: #0072b1;
+}
+
+.social-icons li a > i.fa-instagram:hover {
+  color: #feda75;
+}
+
+.social-icons li a > i.fa-twitter:hover {
+  color: #00acee;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+}
+
+/* buttons */
+.btn {
   padding: 10px 20px;
-  font-weight: bold;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary);
+  font-weight: 600;
+  color: var(--dark-primary);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-dark-outlined {
   background-color: var(--dark-primary);
   border: 1px solid var(--primary);
   color: var(--primary);
   border-radius: 5px;
+  font-weight: 600;
 }
 
-header button:hover {
+.btn-dark-outlined:hover {
   cursor: pointer;
   background-color: var(--primary);
   color: #fff;
