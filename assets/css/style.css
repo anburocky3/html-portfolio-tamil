@@ -1,9 +1,69 @@
-h1 {
-  color: green;
-  font-size: 80px;
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Noto+Sans+Tamil:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+/* Global variables */
+:root {
+  --primary: #12bdff;
+  --dark-primary: #1b1f24;
 }
 
-div p {
-  color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* header */
+header {
+  background-color: var(--dark-primary);
+  padding: 20px;
+  /* color: #RRGGBB; */
+  color: #fff;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .logo {
+  color: var(--primary);
   font-weight: bold;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: var(--primary);
+}
+
+/* header > buttons */
+header button {
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: var(--dark-primary);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  border-radius: 5px;
+}
+
+header button:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #fff;
 }
