@@ -29,6 +29,11 @@ header {
   /* color: #RRGGBB; */
   color: #fff;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -66,7 +71,7 @@ section.hero-section {
 
   display: flex;
   align-items: center;
-  padding: 20px 120px 0 240px;
+  padding: 40px 120px 0 240px;
 }
 
 .hero-section__title {
@@ -332,16 +337,24 @@ footer a {
   section.hero-section {
     flex-direction: column;
     padding: 40px;
+    padding-top: 120px;
+  }
+
+  section.hero-section img {
+    display: none;
   }
 
   /* About section */
   section.about-section {
     flex-direction: column;
+    padding: 30px;
   }
 
   .about-section--desc {
     margin-left: 0;
     margin-top: 30px;
+    width: 100%;
+    max-width: unset;
   }
 
   /* My Works */
