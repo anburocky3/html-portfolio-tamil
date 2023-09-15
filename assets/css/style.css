@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: var(--nunito);
+  font-family: var(--nunito) !important;
 }
 
 /* header */
@@ -267,4 +267,50 @@ ul.social-icons {
 
 .work-section-box__icon:hover {
   background-color: var(--primary-hover);
+}
+
+/* Contact CSS */
+.contact-section {
+  background-color: #14171c;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-section h4 {
+  font-size: 30px;
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.contact-section h4 span {
+  color: var(--primary);
+}
+
+.contact-section form input,
+textarea {
+  padding: 5px 10px;
+  outline: none;
+  width: 350px;
+  border: none;
+  background-color: #c4c4c4;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  resize: none;
+  font-family: var(--nunito);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--dark-primary);
+  color: gray;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary);
 }
