@@ -318,3 +318,51 @@ footer a {
   text-decoration: none;
   color: var(--primary);
 }
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  header > * {
+    margin-bottom: 10px;
+  }
+
+  /* hero section */
+  section.hero-section {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  /* About section */
+  section.about-section {
+    flex-direction: column;
+  }
+
+  .about-section--desc {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  /* My Works */
+  .work-section {
+    padding: 30px 10px;
+  }
+
+  .work-section-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-section-box {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Contact */
+  .contact-section form input,
+  textarea {
+    width: 100%;
+  }
+}
